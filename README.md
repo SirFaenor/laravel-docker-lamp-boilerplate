@@ -34,11 +34,10 @@ COMPOSE_APACHE_RUN_GROUP=#1000
 
 
 ### Ready
-Visit http://localhost:8080 (or any host's port according to COMPOSE_WEB_PORT).
-Phpmyadmin is available on http://localhost:5000  (or any host's port according to COMPOSE_PHPMYADMIN_PORT).
-Mysql data dir is mounted at ./docker-data/mysql.
-Apache logs dir is mounted on ./docker-data/log.
-
+Visit http://localhost:8080 (or any host's port according to COMPOSE_WEB_PORT).  
+Phpmyadmin is available on http://localhost:5000  (or any host's port according to COMPOSE_PHPMYADMIN_PORT).  
+Mysql data dir is mounted at ./docker-data/mysql.  
+Apache logs dir is mounted on ./docker-data/log.  
 ### Shortcut
 ```
 git clone https://github.com/SirFaenor/laravel-docker-boilerplate && \
