@@ -29,6 +29,8 @@ RUN docker-php-ext-enable imagick
 
 RUN php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer
 
+RUN curl -sL https://deb.nodesource.com/setup_15.x | bash -  && apt-get install -y nodejs
+
 # set document root to Laravel public folder
 ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
